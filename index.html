@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           body {
+            background-image: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/fashion-conceptual-studio-photo-of-woman-in-fluffy-oversized-jacket-free-image.jpeg?w=2210&quality=70);
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+
+            .container {
+            /* Frosted glass effect */
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+
+            width: 570px;
+            height: 480px;
+            }
+
+            .rc-video {
+            width: 500px;
+            border-radius: 10px;
+            display: block; /* ensures it centers cleanly inside flex container */
+            margin: 0 auto; /* centers in fallback case */
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .product-name {
+                font-style: normal;
+                font-synthesis: none;
+                -webkit-font-smoothing: antialiased;
+                margin: 0;
+                padding: 0;
+                color: #1d1d1f;
+                font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+                font-size: 45px;
+                font-weight: 600;
+                letter-spacing: -.003em;
+                line-height: 1.0834933333;
+                padding-bottom: 13px;
+                max-width: 540px;
+                padding-top: 7px;
+            }
+
+            .tagline {
+            font-style: normal;
+                font-synthesis: none;
+                -webkit-font-smoothing: antialiased;
+                margin: 0;
+                padding: 0;
+            color: #1d1d1f;
+            font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            }
+            .price{
+                 font-style: normal;
+                font-synthesis: none;
+                -webkit-font-smoothing: antialiased;
+                margin: 0;
+                padding: 0;
+                color: #1d1d1f;
+            font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 200;
+            margin-top: 18px;
+
+            }
+            .button button {
+                margin-top: 15px;
+                background-color: #0071e3;
+                border: none;
+                color: aliceblue;
+                border-radius: 18px;
+                padding: 5px 13px;
+                cursor: pointer;
+                font-style: normal;
+                font-synthesis: none;
+                -webkit-font-smoothing: antialiased;
+                
+            }
+            .badge-no-scrim{
+                font-style: normal;
+                font-synthesis: none;
+                -webkit-font-smoothing: antialiased;
+                margin: 0;
+                padding: 0;
+                font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+                font-size: 16px;
+                font-weight: 540;
+                letter-spacing: -.022em;
+                line-height: 1.1764805882;
+                color: #b64400;
+            }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <span class="badge badge-no-scrim">New</span>
+            <div class="product-name">Apple Vision Pro
+                <div class="tagline">New powerful M5 chip and comfortable Dual Knit Band.
+                </div>
+            </div>
+            <div class="video-file">
+                <video 
+                class="rc-video" 
+                id="vision-pro-video" 
+                autoplay 
+                loop 
+                muted 
+                playsinline 
+                poster="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/vision-pro-gallery-measure-hero-202510_PF1?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=eDVwb1h3eE5DQmx2RnhFenBtbjB4eDdJeFpaUjNiUnhGaHFXYnpFSWxJcFJXeiswNU9FclNOdlR3T1Z4SmxHMGd2S3NaRzcrU0dmYjNHTUFiMnlsWFNrT3VSbnZSMWpmMWVuSlI3UlowWE9mTDJEWTc1a2tzL3B5UTh1azJZOHo" 
+                role="img" 
+                aria-label="Apple Vision Pro, rotating from front to side, laminated glass with array of cameras and sensors, aluminum alloy frame, assembled with Light Seal, Audio Strap, and Dual Knit Band" 
+                tabindex="-1"
+                >
+                <source src="https://store.storevideos.cdn-apple.com/v1/store.apple.com/st/1758586620598/vision-pro-gallery-measure-hero-202510.mp4" type="video/mp4">
+                <p>Video is not supported</p>
+            </video>
+            </div>
+            <div class="buy" style="display: flex; flex-direction: row; justify-content: space-between; ">
+                <div class="price">From $3499 or $291.58/mo. per month for 12 mo.
+                </div>
+                <div class="button">
+                    <button type="submit">Buy</button>
+                </div>
+            </div>
+        </div>  
+    </div>
+</body>
+<script>
+  const video = document.getElementById("vision-pro-video");
+  video.addEventListener("ended", () => {
+    video.currentTime = 0;
+    video.play();
+  })
+</script>
+</html>
